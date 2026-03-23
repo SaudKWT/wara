@@ -29,7 +29,7 @@ export const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-0 left-0 w-full z-50 px-6 lg:px-12 h-20 flex items-center justify-between transition-all duration-500 ${
+        className={`fixed top-0 left-0 w-full z-50 px-4 lg:px-12 h-14 lg:h-20 flex items-center justify-between transition-all duration-500 ${
           isDark
             ? "bg-wara-black/95 backdrop-blur-md"
             : "bg-transparent"

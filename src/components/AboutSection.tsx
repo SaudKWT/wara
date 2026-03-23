@@ -1,52 +1,9 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
-const stats = [
-  { value: "500+", label: "Products Available", tag: "QTY" },
-  { value: "10+", label: "Product Categories", tag: "CAT" },
-  { value: "100%", label: "Climate Tested", tag: "TST" },
-  { value: "24/7", label: "Customer Support", tag: "SVC" },
-];
-
 export const AboutSection = () => {
   return (
     <section id="about" className="w-full overflow-hidden">
-      {/* PART A: STATS BAR — Industrial ticket style */}
-      <div className="bg-wara-black py-20 lg:py-24 px-6 lg:px-20 relative">
-        {/* Orange top line */}
-        <div className="absolute top-0 left-0 right-0 h-[3px] bg-wara-orange" />
-
-        <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0">
-          {stats.map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className={`flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 ${
-                index < stats.length - 1 ? "lg:border-r border-white/10" : ""
-              }`}
-            >
-              {/* Technical tag */}
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-1.5 h-1.5 bg-wara-orange" />
-                <span className="font-mono text-[8px] font-bold text-white/20 uppercase tracking-[0.3em]">
-                  {stat.tag}—{String(index + 1).padStart(2, '0')}
-                </span>
-              </div>
-              <span className="text-5xl lg:text-7xl font-black text-wara-orange tracking-tighter font-mono mb-1">
-                {stat.value}
-              </span>
-              <span className="text-[8px] font-bold uppercase tracking-[0.3em] text-white/30">
-                {stat.label}
-              </span>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
-      {/* PART B: BRAND STORY */}
       <div className="bg-white py-32 lg:py-40 px-6 lg:px-20 relative">
         {/* Orange accent bar — left edge */}
         <div className="absolute left-0 top-[15%] w-[5px] h-[30%] bg-wara-orange hidden lg:block" />
@@ -101,7 +58,7 @@ export const AboutSection = () => {
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-2 h-2 bg-wara-orange" />
                   <span className="font-mono text-wara-orange text-[10px] font-bold tracking-[0.3em] uppercase">
-                    03 / Mission
+                    01 / About
                   </span>
                 </div>
                 <h2 className="text-5xl lg:text-7xl font-black text-wara-black uppercase tracking-tighter leading-[0.9] mb-4">

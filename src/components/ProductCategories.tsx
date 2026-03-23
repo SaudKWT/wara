@@ -63,7 +63,7 @@ export const ProductCategories = () => {
           <div className="flex items-center gap-3">
             <div className="w-2 h-2 bg-wara-orange" />
             <span className="font-mono text-wara-orange text-[10px] font-bold tracking-[0.3em] uppercase">
-              01 / Products
+              03 / Products
             </span>
           </div>
           <h2 className="text-5xl lg:text-7xl font-black text-wara-black uppercase tracking-tighter">

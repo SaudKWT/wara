@@ -1,10 +1,12 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
-import { ProductCategories } from "./components/ProductCategories";
-import { FeaturedProducts } from "./components/FeaturedProducts";
 import { AboutSection } from "./components/AboutSection";
+import { BrandsMarquee } from "./components/BrandsMarquee";
+import { ProductCategories } from "./components/ProductCategories";
 import { ProjectsSection } from "./components/ProjectsSection";
+import { FeaturedProducts } from "./components/FeaturedProducts";
 import { ProcessSection } from "./components/ProcessSection";
+import { CTABanner } from "./components/CTABanner";
 import { Testimonials } from "./components/Testimonials";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
@@ -14,11 +16,13 @@ export default function App() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <ProductCategories />
-      <FeaturedProducts />
       <AboutSection />
+      <BrandsMarquee />
+      <ProductCategories />
       <ProjectsSection />
+      <FeaturedProducts />
       <ProcessSection />
+      <CTABanner />
       <Testimonials />
       <ContactSection />
       <Footer />

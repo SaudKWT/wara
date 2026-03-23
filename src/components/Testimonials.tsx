@@ -7,8 +7,6 @@ const testimonials = [
   { id: 3, text: "Finally a building materials store that understands what works in our climate. Professional and reliable.", author: "Sarah M.", role: "Interior Designer, Hawally", rating: 5 },
 ];
 
-const brands = ["BASF", "Sika", "Knauf", "Hilti", "Jotun", "Wara", "Fosroc", "Weber"];
-
 export const Testimonials = () => {
   return (
     <section className="bg-wara-light py-32 lg:py-40 px-6 lg:px-20 relative overflow-hidden">
@@ -22,7 +20,7 @@ export const Testimonials = () => {
             <div className="flex items-center gap-3 mb-3">
               <div className="w-2 h-2 bg-wara-orange" />
               <span className="font-mono text-wara-orange text-[10px] font-bold tracking-[0.3em] uppercase">
-                06 / Reviews
+                07 / Reviews
               </span>
             </div>
             <h2 className="text-5xl lg:text-7xl font-black text-wara-black uppercase tracking-tighter">
@@ -78,26 +76,6 @@ export const Testimonials = () => {
           ))}
         </div>
 
-        {/* Brands Section */}
-        <div className="pt-16 border-t border-wara-black/10">
-          <div className="flex items-center justify-center gap-3 mb-12">
-            <div className="h-[1px] w-8 bg-wara-orange/30" />
-            <p className="font-mono text-[9px] font-bold text-wara-dark/25 uppercase tracking-[0.4em]">
-              Brands We Carry
-            </p>
-            <div className="h-[1px] w-8 bg-wara-orange/30" />
-          </div>
-
-          <div className="relative flex overflow-hidden">
-            <div className="flex animate-marquee whitespace-nowrap py-4">
-              {[...brands, ...brands].map((brand, i) => (
-                <div key={i} className="mx-12 text-4xl lg:text-5xl font-black text-wara-black/8 uppercase tracking-tighter hover:text-wara-orange transition-all cursor-default">
-                  {brand}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

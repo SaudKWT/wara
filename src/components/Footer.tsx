@@ -20,7 +20,7 @@ export const Footer = () => {
           </div>
           <div className="w-full lg:w-auto flex flex-col sm:flex-row gap-3">
             <input type="email" placeholder="YOUR EMAIL ADDRESS"
-              className="bg-white/5 border border-white/10 px-6 py-4 text-[10px] font-bold uppercase tracking-[0.2em] focus:outline-none focus:border-wara-orange transition-colors min-w-[300px] text-white placeholder:text-white/15" />
+              className="bg-white/5 border border-white/10 px-6 py-4 text-[10px] font-bold uppercase tracking-[0.2em] focus:outline-none focus:border-wara-orange transition-colors w-full sm:min-w-[300px] text-white placeholder:text-white/15" />
             <button className="bg-wara-orange hover:bg-wara-orange/90 text-white px-8 py-4 text-[10px] font-bold uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2">
               Subscribe <Send className="w-3.5 h-3.5" />
             </button>

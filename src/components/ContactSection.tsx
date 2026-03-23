@@ -14,14 +14,14 @@ export const ContactSection = () => {
 
           {/* Oversized section number */}
           <div className="absolute bottom-8 right-8 hidden lg:block">
-            <span className="text-[6rem] font-black leading-none text-stroke-orange select-none opacity-20 font-mono">07</span>
+            <span className="text-[6rem] font-black leading-none text-stroke-orange select-none opacity-20 font-mono">08</span>
           </div>
 
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-2 h-2 bg-wara-orange" />
               <span className="font-mono text-wara-orange text-[10px] font-bold tracking-[0.3em] uppercase">
-                07 / Get In Touch
+                08 / Contact
               </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-3">
@@ -134,7 +134,7 @@ export const ContactSection = () => {
 
       {/* Map */}
       <div className="h-[400px] w-full relative grayscale contrast-110 hover:grayscale-0 transition-all duration-1000">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.56843615456!2d47.9332243!3d29.3537243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf859039366667%3A0x6a6a6a6a6a6a6a6a!2sShuwaikh%20Industrial%2C%20Kuwait!5e0!3m2!1sen!2skw!4v1711111111111!5m2!1sen!2skw"
+        <iframe title="Wara Building Materials location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.56843615456!2d47.9332243!3d29.3537243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf859039366667%3A0x6a6a6a6a6a6a6a6a!2sShuwaikh%20Industrial%2C%20Kuwait!5e0!3m2!1sen!2skw!4v1711111111111!5m2!1sen!2skw"
           width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="absolute inset-0"></iframe>
         <div className="absolute inset-0 pointer-events-none bg-wara-orange/5 mix-blend-multiply" />
         {/* Orange top border */}

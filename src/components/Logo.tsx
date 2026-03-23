@@ -24,11 +24,12 @@ export const WaraLogoMark = ({ size = 40, className = "" }: { size?: number; cla
 
 export const WaraLogo = ({ light = false }: { light?: boolean }) => {
   return (
-    <div className="flex items-center gap-3 cursor-pointer">
-      <WaraLogoMark size={38} />
+    <div className="flex items-center gap-2 lg:gap-3 cursor-pointer">
+      <WaraLogoMark size={32} className="lg:hidden" />
+      <WaraLogoMark size={38} className="hidden lg:block" />
       <div className="flex flex-col">
         <span
-          className={`text-2xl font-bold tracking-tighter leading-none ${
+          className={`text-xl lg:text-2xl font-bold tracking-tighter leading-none ${
             light ? "text-white" : "text-wara-black"
           }`}
         >
@@ -36,7 +37,7 @@ export const WaraLogo = ({ light = false }: { light?: boolean }) => {
         </span>
         <div className="flex flex-col">
           <span
-            className={`text-[8px] font-bold tracking-[0.2em] uppercase ${
+            className={`text-[7px] lg:text-[8px] font-bold tracking-[0.2em] uppercase ${
               light ? "text-white/80" : "text-wara-black/80"
             }`}
           >
