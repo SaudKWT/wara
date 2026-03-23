@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.15 235.59">
+  <!-- Top chevron -->
+  <polygon points="112.03,77.04 176.07,128.52 223.97,90.03 112.03,0.08 0.09,90.03 47.99,128.52" fill="#f24e01" />
+  <!-- Bottom chevron -->
+  <polygon points="112.03,184.09 176.07,235.55 223.97,197.08 112.03,107.13 0.09,197.08 47.99,235.55" fill="#f24e01" />
+  <!-- Right parallelogram -->
+  <polygon points="223.97,107.4 176.07,145.89 176.07,235.55 223.97,197.08" fill="#f24e01" />
+  <!-- Left parallelogram -->
+  <polygon points="0.09,107.4 0.09,197.08 47.99,235.57 47.99,145.89" fill="#f24e01" />
+</svg>
