@@ -25,8 +25,8 @@ export const AboutSection = () => {
             >
               <div className="relative aspect-[4/3] lg:aspect-[4/5] overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1503387762-592dee58c460?q=80&w=2070&auto=format&fit=crop"
-                  alt="Construction detail"
+                  src="/images/wara-store.jpg"
+                  alt="Wara Building Materials storefront"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />

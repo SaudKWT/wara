@@ -1,6 +1,10 @@
 import { motion } from "motion/react";
 
-const brands = ["BASF", "Sika", "Knauf", "Hilti", "Jotun", "Wara", "Fosroc", "Weber"];
+const brands = [
+  { name: "Sika", logo: "/images/brands/sika.svg" },
+  { name: "Jotun", logo: "/images/brands/jotun.svg" },
+  { name: "Weber", logo: "/images/brands/weber.svg" },
+];
 
 export const BrandsMarquee = () => {
   return (
@@ -19,17 +23,25 @@ export const BrandsMarquee = () => {
         </motion.div>
 
         <div className="relative flex overflow-hidden">
-          <div className="flex animate-marquee whitespace-nowrap py-4">
+          <div className="flex animate-marquee items-center py-4">
             {[...brands, ...brands].map((brand, i) => (
-              <div key={i} className="mx-8 lg:mx-12 text-3xl lg:text-5xl font-black text-wara-black/8 uppercase tracking-tighter hover:text-wara-orange transition-all cursor-default">
-                {brand}
+              <div key={i} className="mx-8 lg:mx-14 flex-shrink-0 opacity-20 hover:opacity-100 transition-opacity duration-300 cursor-default">
+                <img
+                  src={brand.logo}
+                  alt={brand.name}
+                  className="h-8 lg:h-12 w-auto object-contain"
+                />
               </div>
             ))}
           </div>
-          <div className="flex animate-marquee whitespace-nowrap py-4" aria-hidden>
+          <div className="flex animate-marquee items-center py-4" aria-hidden>
             {[...brands, ...brands].map((brand, i) => (
-              <div key={i} className="mx-8 lg:mx-12 text-3xl lg:text-5xl font-black text-wara-black/8 uppercase tracking-tighter hover:text-wara-orange transition-all cursor-default">
-                {brand}
+              <div key={i} className="mx-8 lg:mx-14 flex-shrink-0 opacity-20 hover:opacity-100 transition-opacity duration-300 cursor-default">
+                <img
+                  src={brand.logo}
+                  alt={brand.name}
+                  className="h-8 lg:h-12 w-auto object-contain"
+                />
               </div>
             ))}
           </div>

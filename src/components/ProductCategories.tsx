@@ -1,48 +1,48 @@
 import { motion } from "motion/react";
-import { ArrowRight, Wrench, Shield, Nut, Paintbrush, Layers, Droplets } from "lucide-react";
+import { ArrowRight, Wrench, Droplets, Paintbrush, Layers, Grid3x3, ShieldCheck } from "lucide-react";
 
 const categories = [
   {
     id: "01",
-    name: "Cement & Dry Mixes",
-    count: "124",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto=format&fit=crop",
+    name: "Cement & Blocks",
+    count: "25",
+    image: "https://images.unsplash.com/photo-1681880511033-b9582a379ce2?q=80&w=1000&auto=format&fit=crop",
     icon: Layers,
   },
   {
     id: "02",
-    name: "Adhesives & Sealants",
-    count: "86",
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1000&auto=format&fit=crop",
+    name: "Adhesives & Tiling",
+    count: "28",
+    image: "https://images.unsplash.com/photo-1523413307857-ef24c53571ae?q=80&w=1000&auto=format&fit=crop",
     icon: Droplets,
   },
   {
     id: "03",
-    name: "Tools & Equipment",
-    count: "215",
-    image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=1000&auto=format&fit=crop",
-    icon: Wrench,
+    name: "Paint & Finishes",
+    count: "34",
+    image: "https://images.unsplash.com/photo-1682888813788-bf57c360123e?q=80&w=1000&auto=format&fit=crop",
+    icon: Paintbrush,
   },
   {
     id: "04",
-    name: "Safety Gear",
-    count: "54",
-    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop",
-    icon: Shield,
+    name: "Insulation & Waterproofing",
+    count: "18",
+    image: "https://images.unsplash.com/photo-1508139143114-4fb27c19cd29?q=80&w=1000&auto=format&fit=crop",
+    icon: ShieldCheck,
   },
   {
     id: "05",
-    name: "Fasteners & Hardware",
-    count: "342",
-    image: "https://images.unsplash.com/photo-1530124560676-44bc91ec60f6?q=80&w=1000&auto=format&fit=crop",
-    icon: Nut,
+    name: "Mesh & Reinforcement",
+    count: "50",
+    image: "https://images.unsplash.com/photo-1582540730843-f4418d96ccbe?q=80&w=1000&auto=format&fit=crop",
+    icon: Grid3x3,
   },
   {
     id: "06",
-    name: "Paint & Finishes",
-    count: "168",
-    image: "https://images.unsplash.com/photo-1562592306-5496732626af?q=80&w=1000&auto=format&fit=crop",
-    icon: Paintbrush,
+    name: "Tools & Equipment",
+    count: "75",
+    image: "https://images.unsplash.com/photo-1685320198649-781e83a61de4?q=80&w=1000&auto=format&fit=crop",
+    icon: Wrench,
   },
 ];
 
@@ -81,10 +81,12 @@ export const ProductCategories = () => {
         </div>
       </div>
 
-      {/* Asymmetric Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 auto-rows-[280px] lg:auto-rows-[300px]">
+      {/* Bento Grid — tall cards on opposite corners, wide card at bottom */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 auto-rows-[280px] lg:auto-rows-[260px]">
         {categories.map((category, index) => {
-          const isLarge = index === 0 || index === 5;
+          // index 0: tall left (rows 1-2), index 4: tall right (rows 2-3), index 5: wide bottom (cols 1-2)
+          const isTall = index === 0 || index === 4;
+          const isWide = index === 5;
 
           return (
             <motion.a
@@ -95,8 +97,8 @@ export const ProductCategories = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.07 }}
               className={`group relative overflow-hidden cursor-pointer ${
-                isLarge ? "row-span-2" : ""
-              }`}
+                isTall ? "md:row-span-2" : ""
+              } ${isWide ? "md:col-span-2 lg:col-span-2" : ""}`}
             >
               {/* Image */}
               <img

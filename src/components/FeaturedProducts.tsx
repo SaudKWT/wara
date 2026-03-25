@@ -3,12 +3,12 @@ import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { useRef } from "react";
 
 const products = [
-  { id: 1, name: "Gray Cement Based Adhesive", size: "25KG", price: "12.000", image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto=format&fit=crop", isWaraBranded: true },
-  { id: 2, name: "Quick Dry Satin Finish", size: "5L", price: "8.500", image: "https://images.unsplash.com/photo-1562592306-5496732626af?q=80&w=1000&auto=format&fit=crop", isWaraBranded: true },
-  { id: 3, name: "Heavy Duty Caulk Gun", size: "Standard", price: "4.250", image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=1000&auto=format&fit=crop", isWaraBranded: false },
-  { id: 4, name: "Structural Steel Bolts", size: "100 Pack", price: "15.000", image: "https://images.unsplash.com/photo-1530124560676-44bc91ec60f6?q=80&w=1000&auto=format&fit=crop", isWaraBranded: false },
-  { id: 5, name: "Premium Safety Helmet", size: "Adjustable", price: "6.750", image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop", isWaraBranded: true },
-  { id: 6, name: "High-Strength Concrete", size: "40KG", price: "18.000", image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto=format&fit=crop", isWaraBranded: true },
+  { id: 1, name: "Black Portland Cement", size: "50KG Bag", price: "1.150", image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto=format&fit=crop", isWaraBranded: true },
+  { id: 2, name: "Premium Emulsion Paint", size: "Bucket", price: "15.500", image: "https://images.unsplash.com/photo-1562592306-5496732626af?q=80&w=1000&auto=format&fit=crop", isWaraBranded: true },
+  { id: 3, name: "Ceramic Tile Adhesive", size: "25KG Bag", price: "2.150", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1000&auto=format&fit=crop", isWaraBranded: false },
+  { id: 4, name: "Welded Wire Mesh", size: "5KG Sheet", price: "3.000", image: "https://images.unsplash.com/photo-1530124560676-44bc91ec60f6?q=80&w=1000&auto=format&fit=crop", isWaraBranded: false },
+  { id: 5, name: "Iso-Mix Insulation Board", size: "200mm 4cm", price: "8.000", image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop", isWaraBranded: true },
+  { id: 6, name: "Italian Paint Roller", size: "Standard", price: "1.000", image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=1000&auto=format&fit=crop", isWaraBranded: false },
 ];
 
 export const FeaturedProducts = () => {
